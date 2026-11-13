@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="Electron" agent="osonCafe SDLC" version="32.4.1">
+  <diagram id="d24" name="D24 Proposed Microservices Deployment">
+    <mxGraphModel dx="1600" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1800" pageHeight="1100" math="0" shadow="0" background="#FFFFFF">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="&lt;b&gt;D24 · Proposed Microservices Deployment&lt;/b&gt;&lt;br&gt;&lt;font color='#52615B'&gt;UML Deployment · osonCafe SDLC&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;fontSize=23;strokeColor=none;fillColor=none;strokeColor=#CBD5D1;fillColor=#FFFFFF;fontColor=#17211D;fontFamily=Inter;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="40" y="25" width="1500" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="&lt;b&gt;Proposed&lt;/b&gt;" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=13;strokeColor=#64748B;fillColor=#F1F5F9;fontColor=#64748B;fontFamily=Inter;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="1565" y="38" width="190" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="Yashil = Current/Implemented  ·  Sariq = Partial  ·  Kulrang uzilgan = Proposed  ·  Generated from audited requirements" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;fontSize=11;strokeColor=none;fillColor=none;strokeColor=#CBD5D1;fillColor=#FFFFFF;fontColor=#17211D;fontFamily=Inter;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1058" width="1720" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="Branch Edge Hub" style="shape=component;align=left;spacingLeft=35;whiteSpace=wrap;html=1;verticalAlign=middle;fontSize=13;strokeColor=#64748B;fillColor=#F1F5F9;fontColor=#17211D;fontFamily=Inter;strokeWidth=2;dashed=1;dashPattern=7 5;" vertex="1" parent="1">
+          <mxGeometry x="90" y="330" width="250" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="6" value="TLS Internet" style="shape=component;align=left;spacingLeft=35;whiteSpace=wrap;html=1;verticalAlign=middle;fontSize=13;strokeColor=#64748B;fillColor=#F1F5F9;fontColor=#17211D;fontFamily=Inter;strokeWidth=2;dashed=1;dashPattern=7 5;" vertex="1" parent="1">
+          <mxGeometry x="420" y="330" width="250" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="7" value="Cloud API Gateway" style="shape=component;align=left;spacingLeft=35;whiteSpace=wrap;html=1;verticalAlign=middle;fontSize=13;strokeColor=#64748B;fillColor=#F1F5F9;fontColor=#17211D;fontFamily=Inter;strokeWidth=2;dashed=1;dashPattern=7 5;" vertex="1" parent="1">
+          <mxGeometry x="750" y="180" width="250" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="8" value="Service Cluster" style="shape=component;align=left;spacingLeft=35;whiteSpace=wrap;html=1;verticalAlign=middle;fontSize=13;strokeColor=#64748B;fillColor=#F1F5F9;fontColor=#17211D;fontFamily=Inter;strokeWidth=2;dashed=1;dashPattern=7 5;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="180" width="250" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="9" value="Message Broker" style="shape=component;align=left;spacingLeft=35;whiteSpace=wrap;html=1;verticalAlign=middle;fontSize=13;strokeColor=#64748B;fillColor=#F1F5F9;fontColor=#17211D;fontFamily=Inter;strokeWidth=2;dashed=1;dashPattern=7 5;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="480" width="250" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="10" value="Observability" style="shape=component;align=left;spacingLeft=35;whiteSpace=wrap;html=1;verticalAlign=middle;fontSize=13;strokeColor=#64748B;fillColor=#F1F5F9;fontColor=#17211D;fontFamily=Inter;strokeWidth=2;dashed=1;dashPattern=7 5;" vertex="1" parent="1">
+          <mxGeometry x="1430" y="180" width="250" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="11" value="Cloud Backup" style="shape=component;align=left;spacingLeft=35;whiteSpace=wrap;html=1;verticalAlign=middle;fontSize=13;strokeColor=#64748B;fillColor=#F1F5F9;fontColor=#17211D;fontFamily=Inter;strokeWidth=2;dashed=1;dashPattern=7 5;" vertex="1" parent="1">
+          <mxGeometry x="1430" y="480" width="250" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="12" value="Database per Service" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=12;align=center;verticalAlign=middle;fontSize=13;strokeColor=#64748B;fillColor=#FFFFFF;fontColor=#17211D;fontFamily=Inter;strokeWidth=2;dashed=1;dashPattern=7 5;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="730" width="250" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="13" value="offline queue / TLS" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#64748B;fontColor=#17211D;fontFamily=Inter;fontSize=11;strokeWidth=2;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;dashed=1;dashPattern=7 5;" edge="1" parent="1" source="5" target="6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="14" value="sync" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#64748B;fontColor=#17211D;fontFamily=Inter;fontSize=11;strokeWidth=2;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;dashed=1;dashPattern=7 5;" edge="1" parent="1" source="6" target="7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="15" value="route" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#64748B;fontColor=#17211D;fontFamily=Inter;fontSize=11;strokeWidth=2;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;dashed=1;dashPattern=7 5;" edge="1" parent="1" source="7" target="8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="16" value="events" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#64748B;fontColor=#17211D;fontFamily=Inter;fontSize=11;strokeWidth=2;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;dashed=1;dashPattern=7 5;" edge="1" parent="1" source="8" target="9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="17" value="owns" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#64748B;fontColor=#17211D;fontFamily=Inter;fontSize=11;strokeWidth=2;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;dashed=1;dashPattern=7 5;" edge="1" parent="1" source="8" target="12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="18" value="metrics/logs" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#64748B;fontColor=#17211D;fontFamily=Inter;fontSize=11;strokeWidth=2;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;dashed=1;dashPattern=7 5;" edge="1" parent="1" source="8" target="10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="19" value="replication" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#64748B;fontColor=#17211D;fontFamily=Inter;fontSize=11;strokeWidth=2;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;dashed=1;dashPattern=7 5;" edge="1" parent="1" source="12" target="11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="20" value="Conflict resolution, multi-branch sync va cloud operating model — Proposed" style="rounded=1;arcSize=14;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;spacing=8;strokeColor=#B7791F;fillColor=#FFF8E7;fontColor=#17211D;fontFamily=Inter;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="420" y="900" width="960" height="70" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

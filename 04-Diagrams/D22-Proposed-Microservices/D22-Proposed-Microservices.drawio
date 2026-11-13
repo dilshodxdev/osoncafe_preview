@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="Electron" agent="osonCafe SDLC" version="32.4.1">
+  <diagram id="d22" name="D22 Proposed Microservices">
+    <mxGraphModel dx="1600" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1800" pageHeight="1100" math="0" shadow="0" background="#FFFFFF">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="&lt;b&gt;D22 · Proposed Microservices&lt;/b&gt;&lt;br&gt;&lt;font color='#52615B'&gt;Architecture · osonCafe SDLC&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;fontSize=23;strokeColor=none;fillColor=none;strokeColor=#CBD5D1;fillColor=#FFFFFF;fontColor=#17211D;fontFamily=Inter;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="40" y="25" width="1500" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="&lt;b&gt;Proposed&lt;/b&gt;" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=13;strokeColor=#64748B;fillColor=#F1F5F9;fontColor=#64748B;fontFamily=Inter;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="1565" y="38" width="190" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="Yashil = Current/Implemented  ·  Sariq = Partial  ·  Kulrang uzilgan = Proposed  ·  Generated from audited requirements" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;fontSize=11;strokeColor=none;fillColor=none;strokeColor=#CBD5D1;fillColor=#FFFFFF;fontColor=#17211D;fontFamily=Inter;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1058" width="1720" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="API Gateway" style="shape=component;align=left;spacingLeft=35;whiteSpace=wrap;html=1;verticalAlign=middle;fontSize=13;strokeColor=#64748B;fillColor=#F1F5F9;fontColor=#17211D;fontFamily=Inter;strokeWidth=2;dashed=1;dashPattern=7 5;" vertex="1" parent="1">
+          <mxGeometry x="700" y="145" width="320" height="82" as="geometry" />
+        </mxCell>
+        <mxCell id="6" value="Identity Service" style="shape=component;align=left;spacingLeft=35;whiteSpace=wrap;html=1;verticalAlign=middle;fontSize=13;strokeColor=#64748B;fillColor=#F1F5F9;fontColor=#17211D;fontFamily=Inter;strokeWidth=2;dashed=1;dashPattern=7 5;" vertex="1" parent="1">
+          <mxGeometry x="90" y="340" width="260" height="88" as="geometry" />
+        </mxCell>
+        <mxCell id="7" value="Identity DB" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=12;align=center;verticalAlign=middle;fontSize=13;strokeColor=#64748B;fillColor=#FFFFFF;fontColor=#17211D;fontFamily=Inter;strokeWidth=2;dashed=1;dashPattern=7 5;" vertex="1" parent="1">
+          <mxGeometry x="120" y="700" width="200" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="8" value="REST" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#64748B;fontColor=#17211D;fontFamily=Inter;fontSize=11;strokeWidth=2;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;dashed=1;dashPattern=7 5;" edge="1" parent="1" source="5" target="6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9" value="owns" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#64748B;fontColor=#17211D;fontFamily=Inter;fontSize=11;strokeWidth=2;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;dashed=1;dashPattern=7 5;" edge="1" parent="1" source="6" target="7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="10" value="Catalog Service" style="shape=component;align=left;spacingLeft=35;whiteSpace=wrap;html=1;verticalAlign=middle;fontSize=13;strokeColor=#64748B;fillColor=#F1F5F9;fontColor=#17211D;fontFamily=Inter;strokeWidth=2;dashed=1;dashPattern=7 5;" vertex="1" parent="1">
+          <mxGeometry x="425" y="340" width="260" height="88" as="geometry" />
+        </mxCell>
+        <mxCell id="11" value="Catalog DB" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=12;align=center;verticalAlign=middle;fontSize=13;strokeColor=#64748B;fillColor=#FFFFFF;fontColor=#17211D;fontFamily=Inter;strokeWidth=2;dashed=1;dashPattern=7 5;" vertex="1" parent="1">
+          <mxGeometry x="455" y="700" width="200" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="12" value="REST" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#64748B;fontColor=#17211D;fontFamily=Inter;fontSize=11;strokeWidth=2;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;dashed=1;dashPattern=7 5;" edge="1" parent="1" source="5" target="10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="13" value="owns" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#64748B;fontColor=#17211D;fontFamily=Inter;fontSize=11;strokeWidth=2;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;dashed=1;dashPattern=7 5;" edge="1" parent="1" source="10" target="11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="14" value="Sales Service" style="shape=component;align=left;spacingLeft=35;whiteSpace=wrap;html=1;verticalAlign=middle;fontSize=13;strokeColor=#64748B;fillColor=#F1F5F9;fontColor=#17211D;fontFamily=Inter;strokeWidth=2;dashed=1;dashPattern=7 5;" vertex="1" parent="1">
+          <mxGeometry x="760" y="340" width="260" height="88" as="geometry" />
+        </mxCell>
+        <mxCell id="15" value="Sales DB" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=12;align=center;verticalAlign=middle;fontSize=13;strokeColor=#64748B;fillColor=#FFFFFF;fontColor=#17211D;fontFamily=Inter;strokeWidth=2;dashed=1;dashPattern=7 5;" vertex="1" parent="1">
+          <mxGeometry x="790" y="700" width="200" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="16" value="REST" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#64748B;fontColor=#17211D;fontFamily=Inter;fontSize=11;strokeWidth=2;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;dashed=1;dashPattern=7 5;" edge="1" parent="1" source="5" target="14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="17" value="owns" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#64748B;fontColor=#17211D;fontFamily=Inter;fontSize=11;strokeWidth=2;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;dashed=1;dashPattern=7 5;" edge="1" parent="1" source="14" target="15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="18" value="Operations Service" style="shape=component;align=left;spacingLeft=35;whiteSpace=wrap;html=1;verticalAlign=middle;fontSize=13;strokeColor=#64748B;fillColor=#F1F5F9;fontColor=#17211D;fontFamily=Inter;strokeWidth=2;dashed=1;dashPattern=7 5;" vertex="1" parent="1">
+          <mxGeometry x="1095" y="340" width="260" height="88" as="geometry" />
+        </mxCell>
+        <mxCell id="19" value="Operations DB" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=12;align=center;verticalAlign=middle;fontSize=13;strokeColor=#64748B;fillColor=#FFFFFF;fontColor=#17211D;fontFamily=Inter;strokeWidth=2;dashed=1;dashPattern=7 5;" vertex="1" parent="1">
+          <mxGeometry x="1125" y="700" width="200" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="20" value="REST" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#64748B;fontColor=#17211D;fontFamily=Inter;fontSize=11;strokeWidth=2;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;dashed=1;dashPattern=7 5;" edge="1" parent="1" source="5" target="18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="21" value="owns" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#64748B;fontColor=#17211D;fontFamily=Inter;fontSize=11;strokeWidth=2;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;dashed=1;dashPattern=7 5;" edge="1" parent="1" source="18" target="19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="22" value="Reporting Service" style="shape=component;align=left;spacingLeft=35;whiteSpace=wrap;html=1;verticalAlign=middle;fontSize=13;strokeColor=#64748B;fillColor=#F1F5F9;fontColor=#17211D;fontFamily=Inter;strokeWidth=2;dashed=1;dashPattern=7 5;" vertex="1" parent="1">
+          <mxGeometry x="1430" y="340" width="260" height="88" as="geometry" />
+        </mxCell>
+        <mxCell id="23" value="Reporting DB" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=12;align=center;verticalAlign=middle;fontSize=13;strokeColor=#64748B;fillColor=#FFFFFF;fontColor=#17211D;fontFamily=Inter;strokeWidth=2;dashed=1;dashPattern=7 5;" vertex="1" parent="1">
+          <mxGeometry x="1460" y="700" width="200" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="24" value="REST" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#64748B;fontColor=#17211D;fontFamily=Inter;fontSize=11;strokeWidth=2;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;dashed=1;dashPattern=7 5;" edge="1" parent="1" source="5" target="22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="25" value="owns" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#64748B;fontColor=#17211D;fontFamily=Inter;fontSize=11;strokeWidth=2;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;dashed=1;dashPattern=7 5;" edge="1" parent="1" source="22" target="23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="26" value="Message Broker&lt;br&gt;domain events" style="shape=component;align=left;spacingLeft=35;whiteSpace=wrap;html=1;verticalAlign=middle;fontSize=13;strokeColor=#64748B;fillColor=#F1F5F9;fontColor=#17211D;fontFamily=Inter;strokeWidth=2;dashed=1;dashPattern=7 5;" vertex="1" parent="1">
+          <mxGeometry x="650" y="510" width="420" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="27" value="event" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#64748B;fontColor=#17211D;fontFamily=Inter;fontSize=11;strokeWidth=2;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;dashed=1;dashPattern=7 5;" edge="1" parent="1" source="6" target="26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="28" value="event" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#64748B;fontColor=#17211D;fontFamily=Inter;fontSize=11;strokeWidth=2;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;dashed=1;dashPattern=7 5;" edge="1" parent="1" source="10" target="26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="29" value="event" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#64748B;fontColor=#17211D;fontFamily=Inter;fontSize=11;strokeWidth=2;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;dashed=1;dashPattern=7 5;" edge="1" parent="1" source="14" target="26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="30" value="event" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#64748B;fontColor=#17211D;fontFamily=Inter;fontSize=11;strokeWidth=2;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;dashed=1;dashPattern=7 5;" edge="1" parent="1" source="18" target="26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="31" value="event" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#64748B;fontColor=#17211D;fontFamily=Inter;fontSize=11;strokeWidth=2;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;dashed=1;dashPattern=7 5;" edge="1" parent="1" source="22" target="26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="32" value="&lt;b&gt;Migration tamoyili&lt;/b&gt;&lt;br&gt;Modular boundary’dan bosqichma-bosqich extract; bu joriy production emas." style="rounded=1;arcSize=14;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;spacing=8;strokeColor=#B7791F;fillColor=#FFF8E7;fontColor=#17211D;fontFamily=Inter;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="420" y="870" width="960" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

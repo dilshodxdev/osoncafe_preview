@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="Electron" agent="osonCafe SDLC" version="32.4.1">
+  <diagram id="d26" name="D26 Payment Receipt">
+    <mxGraphModel dx="1600" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1900" pageHeight="1200" math="0" shadow="0" background="#FFFFFF">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="&lt;b&gt;D26 · Payment Receipt&lt;/b&gt;&lt;br&gt;&lt;font color='#52615B'&gt;BPMN 2.0 · osonCafe SDLC&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;fontSize=23;strokeColor=none;fillColor=none;strokeColor=#CBD5D1;fillColor=#FFFFFF;fontColor=#17211D;fontFamily=Inter;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="40" y="25" width="1600" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="&lt;b&gt;Current + Partial&lt;/b&gt;" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=13;strokeColor=#B7791F;fillColor=#FFF8E7;fontColor=#B7791F;fontFamily=Inter;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="1665" y="38" width="190" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="Yashil = Current/Implemented  ·  Sariq = Partial  ·  Kulrang uzilgan = Proposed  ·  Generated from audited requirements" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;fontSize=11;strokeColor=none;fillColor=none;strokeColor=#CBD5D1;fillColor=#FFFFFF;fontColor=#17211D;fontFamily=Inter;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1158" width="1820" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="&lt;b&gt;Customer&lt;/b&gt;" style="swimlane;horizontal=0;startSize=38;whiteSpace=wrap;html=1;align=center;verticalAlign=top;fontStyle=1;fontSize=13;strokeColor=#CBD5D1;fillColor=#FBFDFC;fontColor=#17211D;fontFamily=Inter;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="60" y="135" width="1770" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="6" value="&lt;b&gt;Cashier&lt;/b&gt;" style="swimlane;horizontal=0;startSize=38;whiteSpace=wrap;html=1;align=center;verticalAlign=top;fontStyle=1;fontSize=13;strokeColor=#CBD5D1;fillColor=#FBFDFC;fontColor=#17211D;fontFamily=Inter;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="60" y="405" width="1770" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="7" value="&lt;b&gt;Hub&lt;/b&gt;" style="swimlane;horizontal=0;startSize=38;whiteSpace=wrap;html=1;align=center;verticalAlign=top;fontStyle=1;fontSize=13;strokeColor=#CBD5D1;fillColor=#FBFDFC;fontColor=#17211D;fontFamily=Inter;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="60" y="675" width="1770" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="8" value="&lt;b&gt;Payment / Printer adapter&lt;/b&gt;" style="swimlane;horizontal=0;startSize=38;whiteSpace=wrap;html=1;align=center;verticalAlign=top;fontStyle=1;fontSize=13;strokeColor=#CBD5D1;fillColor=#FBFDFC;fontColor=#17211D;fontFamily=Inter;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="60" y="945" width="1770" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="9" value="" style="ellipse;aspect=fixed;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=11;strokeWidth=2;strokeColor=#0F7A55;fillColor=#FFFFFF;fontColor=#17211D;fontFamily=Inter;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="180" y="215" width="42" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="10" value="Method/split" style="rounded=1;arcSize=14;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;spacing=8;strokeColor=#0F7A55;fillColor=#FFFFFF;fontColor=#17211D;fontFamily=Inter;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="290" y="473" width="125" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#0F7A55;fontColor=#17211D;fontFamily=Inter;fontSize=11;strokeWidth=2;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="9" target="10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="12" value="Summa to‘g‘rimi?" style="rhombus;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;strokeColor=#B7791F;fillColor=#FFF8E7;fontColor=#17211D;fontFamily=Inter;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="460" y="743" width="76" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#0F7A55;fontColor=#17211D;fontFamily=Inter;fontSize=11;strokeWidth=2;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="10" target="12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="14" value="Idempotent commit" style="rounded=1;arcSize=14;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;spacing=8;strokeColor=#0F7A55;fillColor=#FFFFFF;fontColor=#17211D;fontFamily=Inter;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="580" y="743" width="125" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#0F7A55;fontColor=#17211D;fontFamily=Inter;fontSize=11;strokeWidth=2;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="12" target="14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="16" value="Receipt print" style="rounded=1;arcSize=14;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;spacing=8;strokeColor=#B7791F;fillColor=#FFF8E7;fontColor=#17211D;fontFamily=Inter;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="725" y="1013" width="125" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#B7791F;fontColor=#17211D;fontFamily=Inter;fontSize=11;strokeWidth=2;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="14" target="16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="18" value="Natijani beradi" style="rounded=1;arcSize=14;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;spacing=8;strokeColor=#0F7A55;fillColor=#FFFFFF;fontColor=#17211D;fontFamily=Inter;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="870" y="473" width="125" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#0F7A55;fontColor=#17211D;fontFamily=Inter;fontSize=11;strokeWidth=2;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="16" target="18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="20" value="" style="ellipse;aspect=fixed;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=11;strokeWidth=4;strokeColor=#0F7A55;fillColor=#FFFFFF;fontColor=#17211D;fontFamily=Inter;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="1050" y="215" width="42" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#0F7A55;fontColor=#17211D;fontFamily=Inter;fontSize=11;strokeWidth=2;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="18" target="20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
